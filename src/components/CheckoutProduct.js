@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { StarIcon } from "@heroIcons/react/outline";
+import { StarIcon } from "@heroicons/react/solid";
 import { useDispatch } from "react-redux";
 import { addToBasket, removeFromBasket } from "../slices/basketSlice";
 

@@ -64,11 +64,15 @@ the user and the user makes request to the server first and
 /*stripe checkout---
 stripe builds its own page that we can theme ,and we just pass the items from the basket to stripe
 then stripe returns to us a checkout session and then we redirect or take the user to the checkout session
- where the user fills out thier card details ,address  etc  and once everthing is done in that session it can either succed or fail/cancelled and then we give them a url to where the user goes or redirect them to our website afterthat hence, we start of with the site than reirect to stripe and then back to our website  
+ where the user fills out thier card details ,address  etc  and once everthing is done in that session 
+ it can either succed or fail/cancelled and then we give them a url to where the user goes\
+or redirect them to our website afterthat hence, we start off with the site than redirect to stripe and
+ then back to our website  
  
  
  
- the snippets on stripe checkout page ,wherever there is node its backend code and wherever is react its front end code
+ the snippets on stripe checkout page ,wherever there is node its backend code and wherever 
+ is react its front end code
  
  
  
@@ -87,5 +91,31 @@ then stripe returns to us a checkout session and then we redirect or take the us
  
  
  42-items,emails on console
+
+
+
+
+serverside redering
+
+there is browser first which the user see all the information typically in react which is called   REACT BUNDLE and when we deploy it online the usere gets the entire react bundle , but as soon as the app grows for enhancement and better working next.js comes in ,and what next does is it adds few steps like it adds a server thats sitting between (this is why we need to deploy next app slightly diffrent we need to hve a server running to go ahead and use it) 
+
+so what happens is the user makes a request to go to the site , and what the user dont see is the user makes request to the server and then the server delivers the page
+
+
+for eg:- imagine if we go to the airbnb app then the and the user requests to go to the home page, where they dont need the entire app, so the server kows the user just visiting the home screen, so the server just prebuilds the home screen and send only the homescreen to the user(and this is where we can cut off a lot of weight and deliver it to the browser ) hence the user experiences fast loading and delivers the pages
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
  */
